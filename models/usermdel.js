@@ -1,7 +1,5 @@
 const mongoose = require('mongoose')
 
-mongoose.connect('mongodb://127.0.0.1:279=017/userDatabase')
-
 const userSchema = mongoose.Schema({
     fullName: String,
     email: String,
