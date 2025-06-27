@@ -14,13 +14,14 @@ app.use(cokieParser());
 app.set('view engine', 'ejs');
 
 
-app.use('/', ownerRouter)
-app.use('/', userRouter);
-app.use('/', productRouter)
+// app.use('/', ownerRouter)
+// app.use('/', userRouter);
+// app.use('/', productRouter)
 
 // Routes
 app.get('/', (req, res) => {
-    res.send('Hello, Express!');
+    // res.send('hello')
+    res.render('login')
 });
 
 // Start server

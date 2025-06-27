@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Panel - E-commerce</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <!-- Sidebar -->
+    <div class="flex">
+        <aside class="w-64 bg-white shadow-md min-h-screen">
+            <div class="p-6 text-2xl font-bold text-blue-600">Admin Panel</div>
+            <nav class="mt-8">
+                <ul>
+                    <li>
+                        <a href="#" class="flex items-center px-6 py-3 text-gray-700 hover:bg-blue-100">
+                            <span class="material-icons mr-2">dashboard</span> Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center px-6 py-3 text-gray-700 hover:bg-blue-100">
+                            <span class="material-icons mr-2">shopping_cart</span> Orders
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center px-6 py-3 text-gray-700 hover:bg-blue-100">
+                            <span class="material-icons mr-2">inventory_2</span> Products
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center px-6 py-3 text-gray-700 hover:bg-blue-100">
+                            <span class="material-icons mr-2">people</span> Customers
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center px-6 py-3 text-gray-700 hover:bg-blue-100">
+                            <span class="material-icons mr-2">settings</span> Settings
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <!-- Main Content -->
+        <main class="flex-1 p-8">
+            <h1 class="text-3xl font-semibold mb-6">Dashboard</h1>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <div class="text-gray-500">Total Orders</div>
+                    <div class="text-2xl font-bold">1,234</div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <div class="text-gray-500">Total Sales</div>
+                    <div class="text-2xl font-bold">$56,789</div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <div class="text-gray-500">Customers</div>
+                    <div class="text-2xl font-bold">567</div>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow p-6">
+                <h2 class="text-xl font-semibold mb-4">Recent Orders</h2>
+                <table class="min-w-full">
+                    <thead>
+                        <tr>
+                            <th class="py-2 px-4 text-left text-gray-600">Order ID</th>
+                            <th class="py-2 px-4 text-left text-gray-600">Customer</th>
+                            <th class="py-2 px-4 text-left text-gray-600">Amount</th>
+                            <th class="py-2 px-4 text-left text-gray-600">Status</th>
+                            <th class="py-2 px-4 text-left text-gray-600">Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-t">
+                            <td class="py-2 px-4">#1001</td>
+                            <td class="py-2 px-4">John Doe</td>
+                            <td class="py-2 px-4">$120.00</td>
+                            <td class="py-2 px-4"><span class="bg-green-100 text-green-700 px-2 py-1 rounded">Completed</span></td>
+                            <td class="py-2 px-4">2024-06-01</td>
+                        </tr>
+                        <tr class="border-t">
+                            <td class="py-2 px-4">#1002</td>
+                            <td class="py-2 px-4">Jane Smith</td>
+                            <td class="py-2 px-4">$80.00</td>
+                            <td class="py-2 px-4"><span class="bg-yellow-100 text-yellow-700 px-2 py-1 rounded">Pending</span></td>
+                            <td class="py-2 px-4">2024-06-02</td>
+                        </tr>
+                        <tr class="border-t">
+                            <td class="py-2 px-4">#1003</td>
+                            <td class="py-2 px-4">Alice Brown</td>
+                            <td class="py-2 px-4">$200.00</td>
+                            <td class="py-2 px-4"><span class="bg-red-100 text-red-700 px-2 py-1 rounded">Cancelled</span></td>
+                            <td class="py-2 px-4">2024-06-03</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    <!-- Material Icons CDN -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</body>
+</html></div>

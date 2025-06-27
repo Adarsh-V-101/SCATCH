@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shop Home - E-commerce</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow">
+        <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-gray-800">ShopEase</h1>
+            <nav>
+                <a href="#" class="text-gray-700 hover:text-blue-600 mx-2">Home</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600 mx-2">Shop</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600 mx-2">Cart</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600 mx-2">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-10">
+        <h2 class="text-3xl font-semibold mb-8 text-center text-gray-800">Featured Products</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <% const products = [
+                { name: 'Wireless Headphones', price: '$59.99', image: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=400&q=80' },
+                { name: 'Smart Watch', price: '$129.99', image: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=400&q=80' },
+                { name: 'Running Shoes', price: '$89.99', image: 'https://images.unsplash.com/photo-1526178613658-3f1622045557?auto=format&fit=crop&w=400&q=80' },
+                { name: 'Backpack', price: '$39.99', image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80' },
+                { name: 'Bluetooth Speaker', price: '$49.99', image: 'https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80' },
+                { name: 'Sunglasses', price: '$19.99', image: 'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80' },
+                { name: 'Fitness Tracker', price: '$69.99', image: 'https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80' },
+                { name: 'Camera', price: '$299.99', image: 'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80' }
+            ]; %>
+            <% products.forEach(product => { %>
+                <div class="bg-white rounded-lg shadow hover:shadow-lg transition p-4 flex flex-col">
+                    <img src="<%= product.image %>" alt="<%= product.name %>" class="h-48 w-full object-cover rounded mb-4">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2"><%= product.name %></h3>
+                    <p class="text-blue-600 font-bold mb-4"><%= product.price %></p>
+                    <button class="mt-auto bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Add to Cart</button>
+                </div>
+            <% }) %>
+        </div>
+    </main>
+
+    <footer class="bg-white mt-10 py-6 shadow-inner">
+        <div class="container mx-auto px-4 text-center text-gray-500">
+            &copy; <%= new Date().getFullYear() %> ShopEase. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>
