@@ -1,4 +1,4 @@
-const mongooose = require('mongoose');
+const mongoose = require('mongoose');
 
 
 const ownerSchema = mongoose.Schema({
@@ -18,4 +18,4 @@ const ownerSchema = mongoose.Schema({
     gstin: String
 })
 
-module.exports = mongooose.model('owner', ownerSchema)
+module.exports = mongoose.model('owner', ownerSchema)

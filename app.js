@@ -14,9 +14,9 @@ app.use(cokieParser());
 app.set('view engine', 'ejs');
 
 
-app.use('/owner', ownerRouter)
-app.use('/user', userRouter);
-app.use('/product', productRouter)
+app.use('/', ownerRouter)
+app.use('/', userRouter);
+app.use('/', productRouter)
 
 // Routes
 app.get('/', (req, res) => {
